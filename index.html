@@ -1,0 +1,438 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sala Papillón – Castellvell del Camp</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Cormorant+Garamond:wght@300;400;500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="#">
+      <img src="logo.png" alt="Papillón" onerror="this.style.display='none'">
+      <span>Sala Papillón</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#instalaciones">Instal·lacions</a></li>
+      <li><a href="#servicios">Serveis</a></li>
+      <li><a href="#precios">Preus</a></li>
+      <li><a href="#contacto">Contacte</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-pattern"></div>
+    <div class="hero-content">
+      <p class="hero-label">Sala d'Esdeveniments Privats · Castellvell del Camp</p>
+      <h1 class="hero-title">
+        Sala
+        <em>Papillón</em>
+      </h1>
+      <p class="hero-subtitle">On cada celebració es converteix en un record inoblidable</p>
+      <a href="#contacto" class="hero-cta">Reserva el teu esdeveniment</a>
+    </div>
+    <div class="hero-scroll">↓</div>
+  </section>
+
+  <!-- INSTALACIONES -->
+  <section id="instalaciones">
+    <div class="section-inner">
+      <p class="section-label reveal">Les nostres instal·lacions</p>
+      <h2 class="section-title reveal reveal-delay-1">Un espai únic per a<br>cada celebració</h2>
+      <div class="section-divider reveal reveal-delay-2"></div>
+      <p class="intro-text reveal reveal-delay-2">
+        La Sala Papillón és un recinte exclusiu a Castellvell del Camp, dissenyat per acollir tots els teus esdeveniments privats. Amb una arquitectura de pedra i maó vist, ambients acollidors i espais versàtils, oferim el marc perfecte per a bodes, aniversaris, celebracions familiars i molt més.
+      </p>
+
+      <div class="zones-grid reveal">
+        <!-- Interior -->
+        <div class="zone-card zone-full">
+          <img src="interior.png" alt="Zona Interior" onerror="this.src='barra-cena1.png'">
+          <div class="zone-info">
+            <div class="zone-name">Zona Interior</div>
+            <p class="zone-desc">Sala principal amb capacitat i ambient, llums càlides, parquet de pedra negra i xemeneia de maó vist. Perfecta per a sopars, batejos i celebracions elegants.</p>
+            <span class="zone-tag">Fins a ~100 persones</span>
+          </div>
+        </div>
+
+        <!-- Sala de festes -->
+        <div class="zone-card">
+          <img src="int-boda.png" alt="Interior Boda">
+          <div class="zone-info">
+            <div class="zone-name">Sala de Festes</div>
+            <p class="zone-desc">Sala amb pista de ball, equip de so i llums de festa. Ideal per a noces i aniversaris amb ball.</p>
+            <span class="zone-tag">Pista de ball · DJ</span>
+          </div>
+        </div>
+
+        <!-- Exterior -->
+        <div class="zone-card">
+          <img src="exterior.png" alt="Zona Exterior">
+          <div class="zone-info">
+            <div class="zone-name">Zona Exterior</div>
+            <p class="zone-desc">Jardí amb arbres centenaris, terra natural i llums de fada. Un espai màgic per a cerimònies i cóctels a l'aire lliure.</p>
+            <span class="zone-tag">Jardí · Àrea oberta</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery row -->
+      <div class="gallery-row reveal">
+        <div class="gallery-thumb"><img src="bar-cumple.png" alt="Bar Aniversari"></div>
+        <div class="gallery-thumb"><img src="ext-boda.png" alt="Exterior Boda"></div>
+        <div class="gallery-thumb"><img src="ext-tardeo.png" alt="Exterior Tardeo"></div>
+        <div class="gallery-thumb"><img src="int-tardeo.png" alt="Interior Tardeo"></div>
+      </div>
+
+      <!-- Zones adicionals -->
+      <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap:24px; margin-top:48px;">
+        <div class="reveal" style="padding:28px; border:1px solid var(--border-gold); background:rgba(201,151,62,0.04);">
+          <div style="font-size:2rem; margin-bottom:14px;">🍳</div>
+          <div style="font-family:'Playfair Display',serif; font-size:1.2rem; font-weight:700; color:var(--dark-red); margin-bottom:8px;">Cuina Professional</div>
+          <p style="font-size:0.95rem; line-height:1.6; color:var(--text-mid); font-weight:300;">Cuina equipada accessible tant des de l'interior com de l'exterior. Campana extractora, gas, totes les instal·lacions per al vostre cuiner o càtering.</p>
+        </div>
+        <div class="reveal reveal-delay-1" style="padding:28px; border:1px solid var(--border-gold); background:rgba(201,151,62,0.04);">
+          <div style="font-size:2rem; margin-bottom:14px;">🍸</div>
+          <div style="font-family:'Playfair Display',serif; font-size:1.2rem; font-weight:700; color:var(--dark-red); margin-bottom:8px;">Barra Equipada</div>
+          <p style="font-size:0.95rem; line-height:1.6; color:var(--text-mid); font-weight:300;">Barra de maó vist amb taulell de fusta, neveres i prestatges per a botelles il·luminats. Perfecta per oferir begudes als teus convidats.</p>
+        </div>
+        <div class="reveal reveal-delay-2" style="padding:28px; border:1px solid var(--border-gold); background:rgba(201,151,62,0.04);">
+          <div style="font-size:2rem; margin-bottom:14px;">🚻</div>
+          <div style="font-family:'Playfair Display',serif; font-size:1.2rem; font-weight:700; color:var(--dark-red); margin-bottom:8px;">Lavabos</div>
+          <p style="font-size:0.95rem; line-height:1.6; color:var(--text-mid); font-weight:300;">Lavabos complets i nets, inclou bany adaptat per a persones amb mobilitat reduïda. Espais còmodes i ben mantinguts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios">
+    <div class="section-inner">
+      <p class="section-label reveal">Què oferim</p>
+      <h2 class="section-title reveal reveal-delay-1">Serveis que pots contractar</h2>
+      <div class="section-divider reveal reveal-delay-1"></div>
+      <div class="ornament">✦ ✦ ✦</div>
+
+      <div class="services-grid reveal">
+        <div class="service-card">
+          <span class="service-icon">🎊</span>
+          <div class="service-name">Celebracions Familiars</div>
+          <p class="service-desc">El nostre espai s'adapta a qualsevol celebració familiar, des dels primers aniversaris fins a les noces de plata.</p>
+          <ul class="service-list">
+            <li>Batejos i primeres comunions</li>
+            <li>Aniversaris i celebracions</li>
+            <li>Reunions familiars</li>
+            <li>Bodes i pre-bodes</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <span class="service-icon">🎂</span>
+          <div class="service-name">Festes Infantils</div>
+          <p class="service-desc">Espai interior i exterior ideal per a festes de compleanys infantils, amb possibilitat d'instal·lar castells inflables al jardí.</p>
+          <ul class="service-list">
+            <li>Zona exterior per a jocs</li>
+            <li>Decoració temàtica</li>
+            <li>Servei de taules i cadires infantils</li>
+            <li>Castells inflables (opcional)</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <span class="service-icon">🎵</span>
+          <div class="service-name">Festes i Tardeos</div>
+          <p class="service-desc">Sala amb pista de ball, equip de so professional i jocs de llums per a les millors festes nocturnes i tardeos.</p>
+          <ul class="service-list">
+            <li>Pista de ball amb llums</li>
+            <li>Equip de so professional</li>
+            <li>Bola de discoteca</li>
+            <li>Taules altes i tamborets</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <span class="service-icon">🌿</span>
+          <div class="service-name">Esdeveniments a l'Exterior</div>
+          <p class="service-desc">El jardí amb arbres i llums de fada crea un ambient incomparable per a cóctels, recepcions i sopars a l'aire lliure.</p>
+          <ul class="service-list">
+            <li>Llums de fada entre els arbres</li>
+            <li>Barra de begudes exterior</li>
+            <li>Taules rodones i altes</li>
+            <li>Equip de música exterior</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <span class="service-icon">🍽️</span>
+          <div class="service-name">Servei de Cuina</div>
+          <p class="service-desc">Cuina professional a la teva disposició per al teu cuiner o càtering. Totalment equipada i accessible des d'ambdues zones.</p>
+          <ul class="service-list">
+            <li>Cuina de gas professional</li>
+            <li>Campana extractora</li>
+            <li>Accés des d'interior i exterior</li>
+            <li>Compatible amb càtering extern</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <span class="service-icon">🥂</span>
+          <div class="service-name">Servei de Barra</div>
+          <p class="service-desc">Barra equipada amb tot el necessari perquè puguis oferir begudes als teus convidats. Amb o sense personal de servei.</p>
+          <ul class="service-list">
+            <li>Neveres i sistema de fred</li>
+            <li>Prestatges il·luminats</li>
+            <li>Opció de personal de barra</li>
+            <li>Finestreta exterior d'atenció</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRECIOS -->
+  <section id="precios">
+    <div class="section-inner">
+      <p class="section-label reveal">Tarifes</p>
+      <h2 class="section-title reveal reveal-delay-1">Preus per 3 hores</h2>
+      <div class="section-divider reveal reveal-delay-1"></div>
+
+      <div class="price-note reveal">
+        <span>💬</span>
+        <span>Tots els preus son orientatius per a reserves de <strong>3 hores</strong>. Per a franges horàries personalitzades o esdeveniments especials, consulta'ns directament.</span>
+      </div>
+
+      <div class="price-table-wrapper reveal">
+        <table class="price-table">
+          <thead>
+            <tr>
+              <th>Franja horària</th>
+              <th class="th-highlight">Zona Interior</th>
+              <th class="th-highlight">Zona Exterior</th>
+              <th class="th-highlight">Tot el Recinte</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                Dilluns – Divendres (matí)
+                <span class="badge">matí</span>
+              </td>
+              <td class="price-cell">
+                <span class="amount">Consultar</span>
+                <span class="per">preus especials</span>
+              </td>
+              <td class="price-cell">
+                <span class="amount">Consultar</span>
+                <span class="per">preus especials</span>
+              </td>
+              <td class="price-cell negotiable">
+                <span class="amount">Negociable</span>
+                <span class="per">millor oferta garantida</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Dilluns – Dijous (tarda)
+              </td>
+              <td class="price-cell">
+                <span class="amount">Consultar</span>
+                <span class="per">preus especials</span>
+              </td>
+              <td class="price-cell">
+                <span class="amount">Consultar</span>
+                <span class="per">preus especials</span>
+              </td>
+              <td class="price-cell negotiable">
+                <span class="amount">Negociable</span>
+                <span class="per">millor oferta garantida</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Dissabte i Diumenge (matí)
+              </td>
+              <td class="price-cell">
+                <span class="amount">Consultar</span>
+                <span class="per">cap de setmana</span>
+              </td>
+              <td class="price-cell">
+                <span class="amount">Consultar</span>
+                <span class="per">cap de setmana</span>
+              </td>
+              <td class="price-cell negotiable">
+                <span class="amount">Negociable</span>
+                <span class="per">millor oferta garantida</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Divendres, Dissabte i Diumenge (tarda–nit)
+                <span class="badge" style="background:var(--gold); color:var(--dark-brown);">popular</span>
+              </td>
+              <td class="price-cell">
+                <span class="amount">Consultar</span>
+                <span class="per">cap de setmana nit</span>
+              </td>
+              <td class="price-cell">
+                <span class="amount">Consultar</span>
+                <span class="per">cap de setmana nit</span>
+              </td>
+              <td class="price-cell negotiable">
+                <span class="amount">Negociable</span>
+                <span class="per">millor oferta garantida</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Festius
+              </td>
+              <td class="price-cell">
+                <span class="amount">Consultar</span>
+                <span class="per">tarifa festiu</span>
+              </td>
+              <td class="price-cell">
+                <span class="amount">Consultar</span>
+                <span class="per">tarifa festiu</span>
+              </td>
+              <td class="price-cell negotiable">
+                <span class="amount">Negociable</span>
+                <span class="per">millor oferta garantida</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="price-footer reveal">
+        <strong>Sempre hi ha marge de negociació.</strong> Posem-nos en contacte i t'explicarem totes les opcions disponibles adaptades a les teves necessitats i pressupost. Per a grups grans, events recurrents o combinació de zones, tenim tarifes especials.
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <div class="section-inner">
+      <p class="section-label reveal">Parlem</p>
+      <h2 class="section-title reveal reveal-delay-1">Contacta amb nosaltres</h2>
+      <div class="section-divider reveal reveal-delay-1"></div>
+
+      <div class="contact-wrapper">
+        <!-- Info -->
+        <div class="contact-info reveal">
+          <p>Tens un esdeveniment en ment? Consulta'ns sense compromís. T'ajudarem a trobar la millor opció per a la teva celebració.</p>
+
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div class="contact-item-text">
+              <div class="contact-item-label">Telèfon · WhatsApp</div>
+              <div class="contact-item-value">
+                <a href="tel:+34699164448">699 164 448</a><br>
+                <small style="color:rgba(245,237,216,0.45); font-size:0.85rem;">Lidia – Disponible per a consultes</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div class="contact-item-text">
+              <div class="contact-item-label">Correu electrònic</div>
+              <div class="contact-item-value">
+                <a href="mailto:lidia.papillon@pertots.com">lidia.papillon@pertots.com</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div class="contact-item-text">
+              <div class="contact-item-label">Ubicació</div>
+              <div class="contact-item-value">
+                Avinguda de Reus<br>
+                <small style="color:rgba(245,237,216,0.45); font-size:0.85rem;">Castellvell del Camp, Tarragona</small>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:32px; padding:20px; border:1px solid rgba(201,151,62,0.25); background:rgba(201,151,62,0.06);">
+            <div style="font-family:'Montserrat',sans-serif; font-size:0.65rem; font-weight:600; letter-spacing:0.15em; text-transform:uppercase; color:var(--gold); margin-bottom:10px;">Organitzat per</div>
+            <img src="logo-pep.png" alt="Grup Pep" style="height:48px; opacity:0.85;" onerror="this.style.display='none'">
+            <div style="margin-top:8px; font-size:0.9rem; color:rgba(245,237,216,0.5);">Grup Pep – Organitzador d'esdeveniments</div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form reveal reveal-delay-1">
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Nom *</label>
+                <input type="text" id="f-nom" placeholder="El teu nom" required>
+              </div>
+              <div class="form-group">
+                <label>Cognoms</label>
+                <input type="text" id="f-cog" placeholder="Els teus cognoms">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Telèfon *</label>
+                <input type="tel" id="f-tel" placeholder="6XX XXX XXX" required>
+              </div>
+              <div class="form-group">
+                <label>Correu electrònic</label>
+                <input type="email" id="f-mail" placeholder="correu@exemple.com">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Tipus d'esdeveniment</label>
+              <select id="f-tipus">
+                <option value="">Selecciona una opció...</option>
+                <option>Boda</option>
+                <option>Aniversari / Cumpleaños</option>
+                <option>Festa infantil</option>
+                <option>Festa de tardeo</option>
+                <option>Bateig / Primera comunió</option>
+                <option>Reunió familiar</option>
+                <option>Altre</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Data aproximada</label>
+              <input type="date" id="f-data">
+            </div>
+            <div class="form-group">
+              <label>La teva consulta *</label>
+              <textarea id="f-msg" placeholder="Explica'ns el teu esdeveniment: nombre de persones aproximat, horari, zona que t'interessa, serveis addicionals..." required></textarea>
+            </div>
+            <button type="submit" class="form-submit">Enviar consulta →</button>
+          </form>
+
+          <div class="form-success" id="formSuccess">
+            <div class="success-icon">✓</div>
+            <div style="font-family:'Playfair Display',serif; font-size:1.6rem; color:var(--cream); margin-bottom:10px;">Missatge enviat!</div>
+            <p>Hem rebut la teva consulta. Ens posarem en contacte amb tu en breu per parlar dels detalls del teu esdeveniment.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">
+      <img src="assets/images/logos/logo.png" alt="Papillón" onerror="this.style.display='none'">
+      <span>Sala Papillón</span>
+    </div>
+    <div class="footer-copy">© 2025 Sala Papillón · Castellvell del Camp</div>
+    <div class="footer-right">
+      Sala d'Esdeveniments Privats<br>
+      Organitzat per : <br>
+      <img src="assets/images/logos/logo-pep.png" alt="Papillón" onerror="this.style.display='none'">
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
