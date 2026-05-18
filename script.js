@@ -1,4 +1,3 @@
-// script.js
 // Scroll reveal
 const reveals = document.querySelectorAll('.reveal');
 const observer = new IntersectionObserver((entries) => {
@@ -8,27 +7,33 @@ const observer = new IntersectionObserver((entries) => {
       observer.unobserve(e.target);
     }
   });
-}, {
-  threshold: 0.1
-});
+}, { threshold: 0.1 });
 reveals.forEach(el => observer.observe(el));
 
-// Form submit — mailto fallback
+// Inicialitza EmailJS amb la teva Public Key
+emailjs.init("6G_XcLBlJOl_sngk5");
+
+// Form submit amb EmailJS
 document.getElementById('contactForm').addEventListener('submit', function(e) {
   e.preventDefault();
-  const nom = document.getElementById('f-nom').value;
-  const cog = document.getElementById('f-cog').value;
-  const tel = document.getElementById('f-tel').value;
-  const mail = document.getElementById('f-mail').value;
-  const tipus = document.getElementById('f-tipus').value;
-  const data = document.getElementById('f-data').value;
-  const msg = document.getElementById('f-msg').value;
 
-  const body = `Nom: ${nom} ${cog}\nTelèfon: ${tel}\nEmail: ${mail}\nTipus d'esdeveniment: ${tipus}\nData aproximada: ${data}\n\nMissatge:\n${msg}`;
+  const templateParams = {
+    nom:      document.getElementById('f-nom').value,
+    cognoms:  document.getElementById('f-cog').value,
+    telefon:  document.getElementById('f-tel').value,
+    email:    document.getElementById('f-mail').value,
+    tipus:    document.getElementById('f-tipus').value,
+    data:     document.getElementById('f-data').value,
+    missatge: document.getElementById('f-msg').value,
+  };
 
-  const mailtoLink = `mailto:lidia.papillon@pertots.com?subject=Consulta Sala Papillón – ${encodeURIComponent(nom)}&body=${encodeURIComponent(body)}`;
-  window.location.href = mailtoLink;
-
-  document.getElementById('contactForm').style.display = 'none';
-  document.getElementById('formSuccess').style.display = 'block';
+  emailjs.send("service_hzucp5s", "template_4wrhfkg", templateParams)
+    .then(() => {
+      document.getElementById('contactForm').style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    })
+    .catch((error) => {
+      console.error('Error enviant el correu:', error);
+      alert('Hi ha hagut un error en enviar el formulari. Torna-ho a intentar.');
+    });
 });

@@ -14,7 +14,7 @@
   <!-- NAV -->
   <nav>
     <a class="nav-logo" href="#">
-      <img src="logo.png" alt="Papillón" onerror="this.style.display='none'">
+      <img src="assets/images/logos/logo.png" alt="Papillón" onerror="this.style.display='none'">
       <span>Sala Papillón</span>
     </a>
     <ul class="nav-links">
@@ -54,7 +54,7 @@
       <div class="zones-grid reveal">
         <!-- Interior -->
         <div class="zone-card zone-full">
-          <img src="interior.png" alt="Zona Interior" onerror="this.src='barra-cena1.png'">
+          <img src="assets/images/interior/interior.png" alt="Zona Interior" onerror="this.src='barra-cena1.png'">
           <div class="zone-info">
             <div class="zone-name">Zona Interior</div>
             <p class="zone-desc">Sala principal amb capacitat i ambient, llums càlides, parquet de pedra negra i xemeneia de maó vist. Perfecta per a sopars, batejos i celebracions elegants.</p>
@@ -63,18 +63,18 @@
         </div>
 
         <!-- Sala de festes -->
-        <div class="zone-card">
-          <img src="int-boda.png" alt="Interior Boda">
+        <!--<div class="zone-card">
+          <img src="assets/images/interior/cocina.png" alt="Interior Boda">
           <div class="zone-info">
-            <div class="zone-name">Sala de Festes</div>
-            <p class="zone-desc">Sala amb pista de ball, equip de so i llums de festa. Ideal per a noces i aniversaris amb ball.</p>
-            <span class="zone-tag">Pista de ball · DJ</span>
+            <div class="zone-name">Zona de Cuina/Càtering</div>
+            <p class="zone-desc">Espai accessible tant des de la zona interior com de la zona exterior per als vostres cuiners o càtering</p>
+            <span class="zone-tag">Campana extractora · Gas</span>
           </div>
-        </div>
+        </div> -->
 
         <!-- Exterior -->
-        <div class="zone-card">
-          <img src="exterior.png" alt="Zona Exterior">
+        <div class="zone-card zone-full">
+          <img src="assets/images/exterior/exterior.png" alt="Zona Exterior">
           <div class="zone-info">
             <div class="zone-name">Zona Exterior</div>
             <p class="zone-desc">Jardí amb arbres centenaris, terra natural i llums de fada. Un espai màgic per a cerimònies i cóctels a l'aire lliure.</p>
@@ -85,10 +85,10 @@
 
       <!-- Gallery row -->
       <div class="gallery-row reveal">
-        <div class="gallery-thumb"><img src="bar-cumple.png" alt="Bar Aniversari"></div>
-        <div class="gallery-thumb"><img src="ext-boda.png" alt="Exterior Boda"></div>
-        <div class="gallery-thumb"><img src="ext-tardeo.png" alt="Exterior Tardeo"></div>
-        <div class="gallery-thumb"><img src="int-tardeo.png" alt="Interior Tardeo"></div>
+        <div class="gallery-thumb"><img src="assets/images/barra/bar-cumple.png" alt="Bar Aniversari"></div>
+        <div class="gallery-thumb"><img src="assets/images/exterior/ext-boda.png" alt="Exterior Boda"></div>
+        <div class="gallery-thumb"><img src="assets/images/exterior/ext-tardeo.png" alt="Exterior Tardeo"></div>
+        <div class="gallery-thumb"><img src="assets/images/interior/int-tardeo.png" alt="Interior Tardeo"></div>
       </div>
 
       <!-- Zones adicionals -->
@@ -122,69 +122,91 @@
 
       <div class="services-grid reveal">
         <div class="service-card">
-          <span class="service-icon">🎊</span>
-          <div class="service-name">Celebracions Familiars</div>
-          <p class="service-desc">El nostre espai s'adapta a qualsevol celebració familiar, des dels primers aniversaris fins a les noces de plata.</p>
+          <span class="service-icon">🎈</span>
+          <div class="service-name">Inflables i Atraccions</div>
+          <p class="service-desc">Atraccions de gran format que son el centre de qualsevol esdeveniment. Ideals per generar impacte visual i oferir diversió contínua per a totes les edats.</p>
           <ul class="service-list">
-            <li>Batejos i primeres comunions</li>
-            <li>Aniversaris i celebracions</li>
-            <li>Reunions familiars</li>
-            <li>Bodes i pre-bodes</li>
+            <li>Inflables de diferents tamanys</li>
+            <li>Tobogan urbà (fins 125 m)</li>
+            <li>Futbolin humà</li>
+            <li>Inflables aquàtics</li>
           </ul>
         </div>
         <div class="service-card">
-          <span class="service-icon">🎂</span>
-          <div class="service-name">Festes Infantils</div>
-          <p class="service-desc">Espai interior i exterior ideal per a festes de compleanys infantils, amb possibilitat d'instal·lar castells inflables al jardí.</p>
+          <span class="service-icon">🎉</span>
+          <div class="service-name">Festes Temátiques i Efectes Especials</div>
+          <p class="service-desc">Experiències dinàmiques i visuals que transformen qualsevol espai en una autèntica festa. Perfectes per a esdeveniments multitudinaris, celebracions juvenils i ambients festius inoblidables.</p>
           <ul class="service-list">
-            <li>Zona exterior per a jocs</li>
-            <li>Decoració temàtica</li>
-            <li>Servei de taules i cadires infantils</li>
-            <li>Castells inflables (opcional)</li>
+            <li>Festa d'escuma</li>
+            <li>Festa Holi</li>
+            <li>Máquines d'escuma,bombolles i fum</li>
+            <li>Tunel del terror</li>
           </ul>
         </div>
         <div class="service-card">
-          <span class="service-icon">🎵</span>
-          <div class="service-name">Festes i Tardeos</div>
-          <p class="service-desc">Sala amb pista de ball, equip de so professional i jocs de llums per a les millors festes nocturnes i tardeos.</p>
+          <span class="service-icon">🎮</span>
+          <div class="service-name">Gaming i Entreteniment Tecnológic</div>
+          <p class="service-desc">Espais d’oci digital i recreatiu que combinen tecnologia i diversió. Una opció ideal per a públic jove i esdeveniments que busquen entreteniment modern i participatiu.</p>
           <ul class="service-list">
-            <li>Pista de ball amb llums</li>
-            <li>Equip de so professional</li>
-            <li>Bola de discoteca</li>
-            <li>Taules altes i tamborets</li>
+            <li>Wii/Play gegant</li>
+            <li>Màquines retro (Pacman)</li>
+            <li>Air hockey</li>
+            <li>Futbolin</li>
           </ul>
         </div>
         <div class="service-card">
-          <span class="service-icon">🌿</span>
-          <div class="service-name">Esdeveniments a l'Exterior</div>
-          <p class="service-desc">El jardí amb arbres i llums de fada crea un ambient incomparable per a cóctels, recepcions i sopars a l'aire lliure.</p>
+          <span class="service-icon">🧠</span>
+          <div class="service-name">Jocs i Activitats Lúdiques</div>
+          <p class="service-desc">Propostes participatives que fomenten la interacció, el joc en grup i la diversió compartida. Perfectes per a esdeveniments familiars, escolars o activitats comunitàries.</p>
           <ul class="service-list">
-            <li>Llums de fada entre els arbres</li>
-            <li>Barra de begudes exterior</li>
-            <li>Taules rodones i altes</li>
-            <li>Equip de música exterior</li>
+            <li>Gimcana dinàmica</li>
+            <li>Jocs tradicionals/populars</li>
+            <li>Jocs de fira (inflable fira inclòs)</li>
+            <li>Jocs esportius</li>
           </ul>
         </div>
         <div class="service-card">
-          <span class="service-icon">🍽️</span>
-          <div class="service-name">Servei de Cuina</div>
-          <p class="service-desc">Cuina professional a la teva disposició per al teu cuiner o càtering. Totalment equipada i accessible des d'ambdues zones.</p>
+          <span class="service-icon">🎨</span>
+          <div class="service-name">Tallers i Activitats Creatives</div>
+          <p class="service-desc">Espais on la creativitat és protagonista. Activitats pensades perquè els més petits s’expressin, aprenguin i es diverteixin de manera activa i guiada.</p>
           <ul class="service-list">
-            <li>Cuina de gas professional</li>
-            <li>Campana extractora</li>
-            <li>Accés des d'interior i exterior</li>
-            <li>Compatible amb càtering extern</li>
+            <li>Pintacares</li>
+            <li>Globoflexia</li>
+            <li>Taller de disfreces, música...</li>
+            <li>Manualitats</li>
           </ul>
         </div>
         <div class="service-card">
-          <span class="service-icon">🥂</span>
-          <div class="service-name">Servei de Barra</div>
-          <p class="service-desc">Barra equipada amb tot el necessari perquè puguis oferir begudes als teus convidats. Amb o sense personal de servei.</p>
+          <span class="service-icon">🚴</span>
+          <div class="service-name">Activitats esportives i de movilitat</div>
+          <p class="service-desc">Experiències actives que combinen esport, moviment i adrenalina. Ideals per a esdeveniments dinàmics on el públic busca acció i participació física.</p>
           <ul class="service-list">
-            <li>Neveres i sistema de fred</li>
-            <li>Prestatges il·luminats</li>
-            <li>Opció de personal de barra</li>
-            <li>Finestreta exterior d'atenció</li>
+            <li>Circuit de karts/patinets</li>
+            <li>Esports alternatius</li>
+            <li>Tir amb arc</li>
+            <li>Mini motos electriques</li>
+          </ul>
+        </div>
+                <div class="service-card">
+          <span class="service-icon">🎭</span>
+          <div class="service-name">Animació i espectacles</div>
+          <p class="service-desc">Contingut artístic i dinàmic pensat per entretenir, sorprendre i mantenir l’atenció del públic durant tot l’esdeveniment. Adaptable a diferents edats i formats.</p>
+          <ul class="service-list">
+            <li>Animació infantil</li>
+            <li>Magia</li>
+            <li>Representació teatral</li>
+            <li>Conta contes</li>
+          </ul>
+        </div>
+                <div class="service-card">
+          <span class="service-icon">🎪</span>
+          <div class="service-name">Organització d'esdeveniments i extres</div>
+          <p class="service-desc">Serveis professionals que completen l’experiència de l’esdeveniment, des de la planificació fins a l’ambientació i el so. Tot el necessari per aconseguir un resultat cuidat i de qualitat.</p>
+          <ul class="service-list">
+            <li>Organització de fires temàtiques</li>
+            <li>Sonorització profesional</li>
+            <li>Decoracions amb globus</li>
+            <li>Orquestres</li>
           </ul>
         </div>
       </div>
@@ -357,7 +379,7 @@
 
           <div style="margin-top:32px; padding:20px; border:1px solid rgba(201,151,62,0.25); background:rgba(201,151,62,0.06);">
             <div style="font-family:'Montserrat',sans-serif; font-size:0.65rem; font-weight:600; letter-spacing:0.15em; text-transform:uppercase; color:var(--gold); margin-bottom:10px;">Organitzat per</div>
-            <img src="logo-pep.png" alt="Grup Pep" style="height:48px; opacity:0.85;" onerror="this.style.display='none'">
+            <img src="assets/images/logos/logo-pep.png" alt="Grup Pep" style="height:48px; opacity:0.85;" onerror="this.style.display='none'">
             <div style="margin-top:8px; font-size:0.9rem; color:rgba(245,237,216,0.5);">Grup Pep – Organitzador d'esdeveniments</div>
           </div>
         </div>
@@ -390,11 +412,12 @@
               <select id="f-tipus">
                 <option value="">Selecciona una opció...</option>
                 <option>Boda</option>
-                <option>Aniversari / Cumpleaños</option>
+                <option>Aniversari</option>
                 <option>Festa infantil</option>
                 <option>Festa de tardeo</option>
                 <option>Bateig / Primera comunió</option>
                 <option>Reunió familiar</option>
+                <option>Menjar / Sopar d'empresa</option>
                 <option>Altre</option>
               </select>
             </div>
@@ -429,10 +452,11 @@
     <div class="footer-right">
       Sala d'Esdeveniments Privats<br>
       Organitzat per : <br>
-      <img src="assets/images/logos/logo-pep.png" alt="Papillón" onerror="this.style.display='none'">
+      <img src="assets/images/logos/logo-pep.png" alt="Papillón" style="height:70px; width:auto;" onerror="this.style.display='none'">
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
