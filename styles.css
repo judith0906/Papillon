@@ -751,7 +751,7 @@ section {
   font-size: 1rem;
   outline: none;
   transition: border-color 0.3s, background 0.3s;
-  -webkit-appearance: none;
+  appearance: none;
 }
 
 .form-group select option {

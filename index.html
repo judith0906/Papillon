@@ -60,7 +60,7 @@
             <div class="zone-name">Zona Interior</div>
             <p class="zone-desc">Sala principal amb capacitat i ambient, llums càlides, parquet de pedra negra i xemeneia de maó vist. Perfecta per a sopars, batejos i celebracions elegants.</p>
             <span class="zone-tag">Fins a ~100 persones</span>
-            <button class="zone-gallery-btn" onclick="openGallery('interior')">Ver fotos →</button>
+            <button class="zone-gallery-btn" onclick="openGallery('interior')">Veure fotos →</button>
           </div>
         </div>
 
@@ -71,71 +71,73 @@
             <div class="zone-name">Zona Exterior</div>
             <p class="zone-desc">Jardí amb arbres centenaris, terra natural i llums de fada. Un espai màgic per a cerimònies i cóctels a l'aire lliure.</p>
             <span class="zone-tag">Jardí · Àrea oberta</span>
-            <button class="zone-gallery-btn" onclick="openGallery('exterior')">Ver fotos →</button>
+            <button class="zone-gallery-btn" onclick="openGallery('exterior')">Veure fotos →</button>
           </div>
         </div>
-
-        <!-- GALERIA DINAMICA -->
-        <div class="dyn-gallery reveal">
-          <div class="dyn-gallery-header">
-            <p class="section-label" style="margin:0;">Galeria de fotos</p>
-            <div class="dyn-gallery-arrows">
-              <button class="dyn-arrow" onclick="galleryPrev()">←</button>
-              <span class="dyn-counter" id="galleryCounter">1 / 8</span>
-              <button class="dyn-arrow" onclick="galleryNext()">→</button>
-            </div>
-          </div>
-          <div class="dyn-gallery-track-wrapper">
-            <div class="dyn-gallery-track" id="galleryTrack">
-              <div class="dyn-gallery-slide"><img src="assets/images/interior/interior.png" alt="Interior"></div>
-              <div class="dyn-gallery-slide"><img src="assets/images/interior/int-boda.png" alt="Interior Boda"></div>
-              <div class="dyn-gallery-slide"><img src="assets/images/interior/int-cumple.png" alt="Interior Aniversari"></div>
-              <div class="dyn-gallery-slide"><img src="assets/images/interior/int-tardeo.png" alt="Interior Tardeo"></div>
-              <div class="dyn-gallery-slide"><img src="assets/images/interior/recibidor.png" alt="Recibidor"></div>
-              <div class="dyn-gallery-slide"><img src="assets/images/exterior/exterior.png" alt="Exterior"></div>
-              <div class="dyn-gallery-slide"><img src="assets/images/exterior/ext-boda.png" alt="Exterior Boda"></div>
-              <div class="dyn-gallery-slide"><img src="assets/images/exterior/ext-cumple.png" alt="Exterior Aniversari"></div>
-              <div class="dyn-gallery-slide"><img src="assets/images/exterior/ext-tardeo.png" alt="Exterior Tardeo"></div>
-              <div class="dyn-gallery-slide"><img src="assets/images/barra/barra.png" alt="Barra"></div>
-              <div class="dyn-gallery-slide"><img src="assets/images/barra/barra-cena1.png" alt="Barra Cena"></div>
-              <div class="dyn-gallery-slide"><img src="assets/images/barra/barra-cena2.png" alt="Barra Cena 2"></div>
-              <div class="dyn-gallery-slide"><img src="assets/images/barra/bar-cumple.png" alt="Bar Aniversari"></div>
-              <div class="dyn-gallery-slide"><img src="assets/images/barra/zona-barra.png" alt="Zona Barra"></div>
-              <div class="dyn-gallery-slide"><img src="assets/images/interior/cocina.png" alt="Cuina"></div>
-              <div class="dyn-gallery-slide"><img src="assets/images/interior/lavabos.png" alt="Lavabos"></div>
-              <div class="dyn-gallery-slide"><img src="assets/images/interior/puerta.png" alt="Porta"></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- LIGHTBOX -->
-        <div class="lightbox" id="lightbox" onclick="closeLightbox()">
-          <button class="lightbox-close" onclick="closeLightbox()">✕</button>
-          <button class="lightbox-arrow lightbox-prev" onclick="event.stopPropagation(); lightboxPrev()">←</button>
-          <img class="lightbox-img" id="lightboxImg" src="" alt="">
-          <button class="lightbox-arrow lightbox-next" onclick="event.stopPropagation(); lightboxNext()">→</button>
-        </div>
-
-        <!-- Zones adicionals -->
-        <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap:24px; margin-top:48px;">
-          <div class="reveal" style="padding:28px; border:1px solid var(--border-gold); background:rgba(201,151,62,0.04);">
-            <div style="font-size:2rem; margin-bottom:14px;">🍳</div>
-            <div style="font-family:'Playfair Display',serif; font-size:1.2rem; font-weight:700; color:var(--dark-red); margin-bottom:8px;">Cuina Professional</div>
-            <p style="font-size:0.95rem; line-height:1.6; color:var(--text-mid); font-weight:300;">Cuina equipada accessible tant des de l'interior com de l'exterior. Campana extractora, gas, totes les instal·lacions per al vostre cuiner o càtering.</p>
-          </div>
-          <div class="reveal reveal-delay-1" style="padding:28px; border:1px solid var(--border-gold); background:rgba(201,151,62,0.04);">
-            <div style="font-size:2rem; margin-bottom:14px;">🍸</div>
-            <div style="font-family:'Playfair Display',serif; font-size:1.2rem; font-weight:700; color:var(--dark-red); margin-bottom:8px;">Barra Equipada</div>
-            <p style="font-size:0.95rem; line-height:1.6; color:var(--text-mid); font-weight:300;">Barra de maó vist amb taulell de fusta, neveres i prestatges per a botelles il·luminats. Perfecta per oferir begudes als teus convidats.</p>
-          </div>
-          <div class="reveal reveal-delay-2" style="padding:28px; border:1px solid var(--border-gold); background:rgba(201,151,62,0.04);">
-            <div style="font-size:2rem; margin-bottom:14px;">🚻</div>
-            <div style="font-family:'Playfair Display',serif; font-size:1.2rem; font-weight:700; color:var(--dark-red); margin-bottom:8px;">Lavabos</div>
-            <p style="font-size:0.95rem; line-height:1.6; color:var(--text-mid); font-weight:300;">Lavabos complets i nets, inclou bany adaptat per a persones amb mobilitat reduïda. Espais còmodes i ben mantinguts.</p>
-          </div>
       </div>
+
+      <!-- GALERIA DINAMICA -->
+      <div class="dyn-gallery reveal">
+        <div class="dyn-gallery-header">
+          <p class="section-label" style="margin:0;">Galeria de fotos</p>
+          <div class="dyn-gallery-arrows">
+            <button class="dyn-arrow" onclick="galleryPrev()">←</button>
+            <span class="dyn-counter" id="galleryCounter">1 / 15</span>
+            <button class="dyn-arrow" onclick="galleryNext()">→</button>
+          </div>
+        </div>
+        <div class="dyn-gallery-track-wrapper">
+          <div class="dyn-gallery-track" id="galleryTrack">
+            <div class="dyn-gallery-slide"><img src="assets/images/interior/interior.png" alt="Interior"></div>
+            <div class="dyn-gallery-slide"><img src="assets/images/interior/int-boda.png" alt="Interior Boda"></div>
+            <div class="dyn-gallery-slide"><img src="assets/images/interior/int-cumple.png" alt="Interior Aniversari"></div>
+            <div class="dyn-gallery-slide"><img src="assets/images/interior/int-tardeo.png" alt="Interior Tardeo"></div>
+            <div class="dyn-gallery-slide"><img src="assets/images/interior/recibidor.png" alt="Recibidor"></div>
+            <div class="dyn-gallery-slide"><img src="assets/images/exterior/exterior.png" alt="Exterior"></div>
+            <div class="dyn-gallery-slide"><img src="assets/images/exterior/ext-boda.png" alt="Exterior Boda"></div>
+            <div class="dyn-gallery-slide"><img src="assets/images/exterior/ext-cumple.png" alt="Exterior Aniversari"></div>
+            <div class="dyn-gallery-slide"><img src="assets/images/exterior/ext-tardeo.png" alt="Exterior Tardeo"></div>
+            <div class="dyn-gallery-slide"><img src="assets/images/barra/barra.png" alt="Barra"></div>
+            <div class="dyn-gallery-slide"><img src="assets/images/barra/barra-cena1.png" alt="Barra Cena"></div>
+            <div class="dyn-gallery-slide"><img src="assets/images/barra/barra-cena2.png" alt="Barra Cena 2"></div>
+            <div class="dyn-gallery-slide"><img src="assets/images/barra/bar-cumple.png" alt="Bar Aniversari"></div>
+            <div class="dyn-gallery-slide"><img src="assets/images/barra/zona-barra.png" alt="Zona Barra"></div>
+            <div class="dyn-gallery-slide"><img src="assets/images/interior/cocina.png" alt="Cuina"></div>
+            <div class="dyn-gallery-slide"><img src="assets/images/interior/lavabos.png" alt="Lavabos"></div>
+            <div class="dyn-gallery-slide"><img src="assets/images/interior/puerta.png" alt="Porta"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Zones adicionals -->
+      <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap:24px; margin-top:48px;">
+        <div class="reveal" style="padding:28px; border:1px solid var(--border-gold); background:rgba(201,151,62,0.04);">
+          <div style="font-size:2rem; margin-bottom:14px;">🍳</div>
+          <div style="font-family:'Playfair Display',serif; font-size:1.2rem; font-weight:700; color:var(--dark-red); margin-bottom:8px;">Cuina Professional</div>
+          <p style="font-size:0.95rem; line-height:1.6; color:var(--text-mid); font-weight:300;">Cuina accessible tant des de l'interior com de l'exterior. Campana extractora, gas, totes les instal·lacions per al vostre cuiner o càtering.</p>
+        </div>
+        <div class="reveal reveal-delay-1" style="padding:28px; border:1px solid var(--border-gold); background:rgba(201,151,62,0.04);">
+          <div style="font-size:2rem; margin-bottom:14px;">🍸</div>
+          <div style="font-family:'Playfair Display',serif; font-size:1.2rem; font-weight:700; color:var(--dark-red); margin-bottom:8px;">Barra Equipada</div>
+          <p style="font-size:0.95rem; line-height:1.6; color:var(--text-mid); font-weight:300;">Barra de maó vist amb taulell de fusta, neveres i prestatges per a botelles il·luminats. Perfecta per oferir begudes als teus convidats.</p>
+        </div>
+        <div class="reveal reveal-delay-2" style="padding:28px; border:1px solid var(--border-gold); background:rgba(201,151,62,0.04);">
+          <div style="font-size:2rem; margin-bottom:14px;">🚻</div>
+          <div style="font-family:'Playfair Display',serif; font-size:1.2rem; font-weight:700; color:var(--dark-red); margin-bottom:8px;">Lavabos</div>
+          <p style="font-size:0.95rem; line-height:1.6; color:var(--text-mid); font-weight:300;">Lavabos complets i nets, inclou bany adaptat per a persones amb mobilitat reduïda. Espais còmodes i ben mantinguts.</p>
+        </div>
+      </div>
+
     </div>
   </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+    <button class="lightbox-arrow lightbox-prev" onclick="event.stopPropagation(); lightboxPrev()">←</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+    <button class="lightbox-arrow lightbox-next" onclick="event.stopPropagation(); lightboxNext()">→</button>
+  </div>
 
   <!-- SERVICIOS -->
   <section id="servicios">
@@ -159,19 +161,19 @@
         </div>
         <div class="service-card">
           <span class="service-icon">🎉</span>
-          <div class="service-name">Festes Temátiques i Efectes Especials</div>
+          <div class="service-name">Festes Temàtiques i Efectes Especials</div>
           <p class="service-desc">Experiències dinàmiques i visuals que transformen qualsevol espai en una autèntica festa. Perfectes per a esdeveniments multitudinaris, celebracions juvenils i ambients festius inoblidables.</p>
           <ul class="service-list">
             <li>Festa d'escuma</li>
             <li>Festa Holi</li>
-            <li>Máquines d'escuma,bombolles i fum</li>
+            <li>Màquines d'escuma, bombolles i fum</li>
             <li>Tunel del terror</li>
           </ul>
         </div>
         <div class="service-card">
           <span class="service-icon">🎮</span>
-          <div class="service-name">Gaming i Entreteniment Tecnológic</div>
-          <p class="service-desc">Espais d’oci digital i recreatiu que combinen tecnologia i diversió. Una opció ideal per a públic jove i esdeveniments que busquen entreteniment modern i participatiu.</p>
+          <div class="service-name">Gaming i Entreteniment Tecnològic</div>
+          <p class="service-desc">Espais d'oci digital i recreatiu que combinen tecnologia i diversió. Una opció ideal per a públic jove i esdeveniments que busquen entreteniment modern i participatiu.</p>
           <ul class="service-list">
             <li>Wii/Play gegant</li>
             <li>Màquines retro (Pacman)</li>
@@ -193,7 +195,7 @@
         <div class="service-card">
           <span class="service-icon">🎨</span>
           <div class="service-name">Tallers i Activitats Creatives</div>
-          <p class="service-desc">Espais on la creativitat és protagonista. Activitats pensades perquè els més petits s’expressin, aprenguin i es diverteixin de manera activa i guiada.</p>
+          <p class="service-desc">Espais on la creativitat és protagonista. Activitats pensades perquè els més petits s'expressin, aprenguin i es diverteixin de manera activa i guiada.</p>
           <ul class="service-list">
             <li>Pintacares</li>
             <li>Globoflexia</li>
@@ -203,33 +205,33 @@
         </div>
         <div class="service-card">
           <span class="service-icon">🚴</span>
-          <div class="service-name">Activitats esportives i de movilitat</div>
+          <div class="service-name">Activitats Esportives i de Mobilitat</div>
           <p class="service-desc">Experiències actives que combinen esport, moviment i adrenalina. Ideals per a esdeveniments dinàmics on el públic busca acció i participació física.</p>
           <ul class="service-list">
             <li>Circuit de karts/patinets</li>
             <li>Esports alternatius</li>
             <li>Tir amb arc</li>
-            <li>Mini motos electriques</li>
+            <li>Mini motos elèctriques</li>
           </ul>
         </div>
         <div class="service-card">
           <span class="service-icon">🎭</span>
-          <div class="service-name">Animació i espectacles</div>
-          <p class="service-desc">Contingut artístic i dinàmic pensat per entretenir, sorprendre i mantenir l’atenció del públic durant tot l’esdeveniment. Adaptable a diferents edats i formats.</p>
+          <div class="service-name">Animació i Espectacles</div>
+          <p class="service-desc">Contingut artístic i dinàmic pensat per entretenir, sorprendre i mantenir l'atenció del públic durant tot l'esdeveniment. Adaptable a diferents edats i formats.</p>
           <ul class="service-list">
             <li>Animació infantil</li>
-            <li>Magia</li>
+            <li>Màgia</li>
             <li>Representació teatral</li>
             <li>Conta contes</li>
           </ul>
         </div>
         <div class="service-card">
           <span class="service-icon">🎪</span>
-          <div class="service-name">Organització d'esdeveniments i extres</div>
-          <p class="service-desc">Serveis professionals que completen l’experiència de l’esdeveniment, des de la planificació fins a l’ambientació i el so. Tot el necessari per aconseguir un resultat cuidat i de qualitat.</p>
+          <div class="service-name">Organització d'Esdeveniments i Extres</div>
+          <p class="service-desc">Serveis professionals que completen l'experiència de l'esdeveniment, des de la planificació fins a l'ambientació i el so. Tot el necessari per aconseguir un resultat cuidat i de qualitat.</p>
           <ul class="service-list">
             <li>Organització de fires temàtiques</li>
-            <li>Sonorització profesional</li>
+            <li>Sonorització professional</li>
             <li>Decoracions amb globus</li>
             <li>Orquestres</li>
           </ul>
@@ -273,75 +275,43 @@
                 Dilluns – Divendres
                 <span class="badge">matí</span>
               </td>
-              <td class="price-cell">
-                <span class="amount">160€</span>
-              </td>
-              <td class="price-cell">
-                <span class="amount">120€</span>
-              </td>
-              <td class="price-cell negotiable">
-                <span class="amount">250€</span>
-              </td>
+              <td class="price-cell"><span class="amount">160€</span></td>
+              <td class="price-cell"><span class="amount">120€</span></td>
+              <td class="price-cell negotiable"><span class="amount">250€</span></td>
             </tr>
             <tr>
               <td>
                 Dilluns – Dijous
                 <span class="badge">tarda-nit</span>
               </td>
-              <td class="price-cell">
-                <span class="amount">180€</span>
-              </td>
-              <td class="price-cell">
-                <span class="amount">140€</span>
-              </td>
-              <td class="price-cell negotiable">
-                <span class="amount">280€</span>
-              </td>
+              <td class="price-cell"><span class="amount">180€</span></td>
+              <td class="price-cell"><span class="amount">140€</span></td>
+              <td class="price-cell negotiable"><span class="amount">280€</span></td>
             </tr>
             <tr>
               <td>
                 Dissabte i Diumenge
                 <span class="badge">matí</span>
               </td>
-              <td class="price-cell">
-                <span class="amount">220€</span>
-              </td>
-              <td class="price-cell">
-                <span class="amount">180€</span>
-              </td>
-              <td class="price-cell negotiable">
-                <span class="amount">300€</span>
-              </td>
+              <td class="price-cell"><span class="amount">220€</span></td>
+              <td class="price-cell"><span class="amount">180€</span></td>
+              <td class="price-cell negotiable"><span class="amount">300€</span></td>
             </tr>
             <tr>
               <td>
-                Divendres, Dissabte i Diumenge 
+                Divendres, Dissabte i Diumenge
                 <span class="badge">tarda-nit</span>
                 <span class="badge" style="background:var(--gold); color:var(--dark-brown);">popular</span>
               </td>
-              <td class="price-cell">
-                <span class="amount">250€</span>
-              </td>
-              <td class="price-cell">
-                <span class="amount">200€</span>
-              </td>
-              <td class="price-cell negotiable">
-                <span class="amount">340€</span>
-              </td>
+              <td class="price-cell"><span class="amount">250€</span></td>
+              <td class="price-cell"><span class="amount">200€</span></td>
+              <td class="price-cell negotiable"><span class="amount">340€</span></td>
             </tr>
             <tr>
-              <td>
-                Festius
-              </td>
-              <td class="price-cell">
-                <span class="amount">360€</span>
-              </td>
-              <td class="price-cell">
-                <span class="amount">330€</span>
-              </td>
-              <td class="price-cell negotiable">
-                <span class="amount">390€</span>
-              </td>
+              <td>Festius</td>
+              <td class="price-cell"><span class="amount">360€</span></td>
+              <td class="price-cell"><span class="amount">330€</span></td>
+              <td class="price-cell negotiable"><span class="amount">390€</span></td>
             </tr>
           </tbody>
         </table>
@@ -362,47 +332,33 @@
           <tbody>
             <tr>
               <td>Decoració</td>
-              <td class="price-cell">
-                <span class="amount">En funció de l'esdeveniment</span>
-              </td>
+              <td class="price-cell"><span class="amount">En funció de l'esdeveniment</span></td>
             </tr>
             <tr>
               <td>Hora extra</td>
-              <td class="price-cell">
-                <span class="amount">60€/h</span>
-              </td>
+              <td class="price-cell"><span class="amount">60€/h</span></td>
             </tr>
             <tr>
-              <td>Hora extra 
-                <span class="badge">de 00:00 a tancament</span></td>
-              <td class="price-cell">
-                <span class="amount">80€/h</span>
-              </td>
+              <td>Hora extra <span class="badge">de 00:00 a tancament</span></td>
+              <td class="price-cell"><span class="amount">80€/h</span></td>
             </tr>
             <tr>
               <td>Reserva de la sala</td>
-              <td class="price-cell">
-                <span class="amount">50€-120€ (Segons tarifa)</span>
-              </td>
+              <td class="price-cell"><span class="amount">50€-120€ (Segons tarifa)</span></td>
             </tr>
             <tr>
               <td>Fiança</td>
-              <td class="price-cell">
-                <span class="amount">100€</span>
-              </td>
+              <td class="price-cell"><span class="amount">100€</span></td>
             </tr>
             <tr>
               <td>Neteja</td>
-              <td class="price-cell">
-                <span class="amount">30€-50€ (Segons espai)</span>
-              </td>
+              <td class="price-cell"><span class="amount">30€-50€ (Segons espai)</span></td>
             </tr>
           </tbody>
         </table>
       </div>
 
     </div>
-
   </section>
 
   <!-- CONTACTO -->
@@ -523,7 +479,7 @@
     <div class="footer-copy">© 2025 Sala Papillón · Castellvell del Camp</div>
     <div class="footer-right">
       Sala d'Esdeveniments Privats<br>
-      Organitzat per : <br>
+      Organitzat per :<br>
       <img src="assets/images/logos/logo-pep.png" alt="Papillón" style="height:70px; width:auto;" onerror="this.style.display='none'">
     </div>
   </footer>
