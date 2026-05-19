@@ -55,23 +55,14 @@
       <div class="zones-grid reveal">
         <!-- Interior -->
         <div class="zone-card zone-full">
-          <img src="assets/images/interior/interior.png" alt="Zona Interior" onerror="this.src='barra-cena1.png'">
+          <img src="assets/images/interior/interior.png" alt="Zona Interior">
           <div class="zone-info">
             <div class="zone-name">Zona Interior</div>
             <p class="zone-desc">Sala principal amb capacitat i ambient, llums càlides, parquet de pedra negra i xemeneia de maó vist. Perfecta per a sopars, batejos i celebracions elegants.</p>
             <span class="zone-tag">Fins a ~100 persones</span>
+            <button class="zone-gallery-btn" onclick="openGallery('interior')">Ver fotos →</button>
           </div>
         </div>
-
-        <!-- Sala de festes -->
-        <!--<div class="zone-card">
-          <img src="assets/images/interior/cocina.png" alt="Interior Boda">
-          <div class="zone-info">
-            <div class="zone-name">Zona de Cuina/Càtering</div>
-            <p class="zone-desc">Espai accessible tant des de la zona interior com de la zona exterior per als vostres cuiners o càtering</p>
-            <span class="zone-tag">Campana extractora · Gas</span>
-          </div>
-        </div> -->
 
         <!-- Exterior -->
         <div class="zone-card zone-full">
@@ -80,35 +71,68 @@
             <div class="zone-name">Zona Exterior</div>
             <p class="zone-desc">Jardí amb arbres centenaris, terra natural i llums de fada. Un espai màgic per a cerimònies i cóctels a l'aire lliure.</p>
             <span class="zone-tag">Jardí · Àrea oberta</span>
+            <button class="zone-gallery-btn" onclick="openGallery('exterior')">Ver fotos →</button>
           </div>
         </div>
-      </div>
 
-      <!-- Gallery row -->
-      <div class="gallery-row reveal">
-        <div class="gallery-thumb"><img src="assets/images/barra/bar-cumple.png" alt="Bar Aniversari"></div>
-        <div class="gallery-thumb"><img src="assets/images/exterior/ext-boda.png" alt="Exterior Boda"></div>
-        <div class="gallery-thumb"><img src="assets/images/exterior/ext-tardeo.png" alt="Exterior Tardeo"></div>
-        <div class="gallery-thumb"><img src="assets/images/interior/int-tardeo.png" alt="Interior Tardeo"></div>
-      </div>
+        <!-- GALERIA DINAMICA -->
+        <div class="dyn-gallery reveal">
+          <div class="dyn-gallery-header">
+            <p class="section-label" style="margin:0;">Galeria de fotos</p>
+            <div class="dyn-gallery-arrows">
+              <button class="dyn-arrow" onclick="galleryPrev()">←</button>
+              <span class="dyn-counter" id="galleryCounter">1 / 8</span>
+              <button class="dyn-arrow" onclick="galleryNext()">→</button>
+            </div>
+          </div>
+          <div class="dyn-gallery-track-wrapper">
+            <div class="dyn-gallery-track" id="galleryTrack">
+              <div class="dyn-gallery-slide"><img src="assets/images/interior/interior.png" alt="Interior"></div>
+              <div class="dyn-gallery-slide"><img src="assets/images/interior/int-boda.png" alt="Interior Boda"></div>
+              <div class="dyn-gallery-slide"><img src="assets/images/interior/int-cumple.png" alt="Interior Aniversari"></div>
+              <div class="dyn-gallery-slide"><img src="assets/images/interior/int-tardeo.png" alt="Interior Tardeo"></div>
+              <div class="dyn-gallery-slide"><img src="assets/images/interior/recibidor.png" alt="Recibidor"></div>
+              <div class="dyn-gallery-slide"><img src="assets/images/exterior/exterior.png" alt="Exterior"></div>
+              <div class="dyn-gallery-slide"><img src="assets/images/exterior/ext-boda.png" alt="Exterior Boda"></div>
+              <div class="dyn-gallery-slide"><img src="assets/images/exterior/ext-cumple.png" alt="Exterior Aniversari"></div>
+              <div class="dyn-gallery-slide"><img src="assets/images/exterior/ext-tardeo.png" alt="Exterior Tardeo"></div>
+              <div class="dyn-gallery-slide"><img src="assets/images/barra/barra.png" alt="Barra"></div>
+              <div class="dyn-gallery-slide"><img src="assets/images/barra/barra-cena1.png" alt="Barra Cena"></div>
+              <div class="dyn-gallery-slide"><img src="assets/images/barra/barra-cena2.png" alt="Barra Cena 2"></div>
+              <div class="dyn-gallery-slide"><img src="assets/images/barra/bar-cumple.png" alt="Bar Aniversari"></div>
+              <div class="dyn-gallery-slide"><img src="assets/images/barra/zona-barra.png" alt="Zona Barra"></div>
+              <div class="dyn-gallery-slide"><img src="assets/images/interior/cocina.png" alt="Cuina"></div>
+              <div class="dyn-gallery-slide"><img src="assets/images/interior/lavabos.png" alt="Lavabos"></div>
+              <div class="dyn-gallery-slide"><img src="assets/images/interior/puerta.png" alt="Porta"></div>
+            </div>
+          </div>
+        </div>
 
-      <!-- Zones adicionals -->
-      <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap:24px; margin-top:48px;">
-        <div class="reveal" style="padding:28px; border:1px solid var(--border-gold); background:rgba(201,151,62,0.04);">
-          <div style="font-size:2rem; margin-bottom:14px;">🍳</div>
-          <div style="font-family:'Playfair Display',serif; font-size:1.2rem; font-weight:700; color:var(--dark-red); margin-bottom:8px;">Cuina Professional</div>
-          <p style="font-size:0.95rem; line-height:1.6; color:var(--text-mid); font-weight:300;">Cuina equipada accessible tant des de l'interior com de l'exterior. Campana extractora, gas, totes les instal·lacions per al vostre cuiner o càtering.</p>
+        <!-- LIGHTBOX -->
+        <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+          <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+          <button class="lightbox-arrow lightbox-prev" onclick="event.stopPropagation(); lightboxPrev()">←</button>
+          <img class="lightbox-img" id="lightboxImg" src="" alt="">
+          <button class="lightbox-arrow lightbox-next" onclick="event.stopPropagation(); lightboxNext()">→</button>
         </div>
-        <div class="reveal reveal-delay-1" style="padding:28px; border:1px solid var(--border-gold); background:rgba(201,151,62,0.04);">
-          <div style="font-size:2rem; margin-bottom:14px;">🍸</div>
-          <div style="font-family:'Playfair Display',serif; font-size:1.2rem; font-weight:700; color:var(--dark-red); margin-bottom:8px;">Barra Equipada</div>
-          <p style="font-size:0.95rem; line-height:1.6; color:var(--text-mid); font-weight:300;">Barra de maó vist amb taulell de fusta, neveres i prestatges per a botelles il·luminats. Perfecta per oferir begudes als teus convidats.</p>
-        </div>
-        <div class="reveal reveal-delay-2" style="padding:28px; border:1px solid var(--border-gold); background:rgba(201,151,62,0.04);">
-          <div style="font-size:2rem; margin-bottom:14px;">🚻</div>
-          <div style="font-family:'Playfair Display',serif; font-size:1.2rem; font-weight:700; color:var(--dark-red); margin-bottom:8px;">Lavabos</div>
-          <p style="font-size:0.95rem; line-height:1.6; color:var(--text-mid); font-weight:300;">Lavabos complets i nets, inclou bany adaptat per a persones amb mobilitat reduïda. Espais còmodes i ben mantinguts.</p>
-        </div>
+
+        <!-- Zones adicionals -->
+        <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap:24px; margin-top:48px;">
+          <div class="reveal" style="padding:28px; border:1px solid var(--border-gold); background:rgba(201,151,62,0.04);">
+            <div style="font-size:2rem; margin-bottom:14px;">🍳</div>
+            <div style="font-family:'Playfair Display',serif; font-size:1.2rem; font-weight:700; color:var(--dark-red); margin-bottom:8px;">Cuina Professional</div>
+            <p style="font-size:0.95rem; line-height:1.6; color:var(--text-mid); font-weight:300;">Cuina equipada accessible tant des de l'interior com de l'exterior. Campana extractora, gas, totes les instal·lacions per al vostre cuiner o càtering.</p>
+          </div>
+          <div class="reveal reveal-delay-1" style="padding:28px; border:1px solid var(--border-gold); background:rgba(201,151,62,0.04);">
+            <div style="font-size:2rem; margin-bottom:14px;">🍸</div>
+            <div style="font-family:'Playfair Display',serif; font-size:1.2rem; font-weight:700; color:var(--dark-red); margin-bottom:8px;">Barra Equipada</div>
+            <p style="font-size:0.95rem; line-height:1.6; color:var(--text-mid); font-weight:300;">Barra de maó vist amb taulell de fusta, neveres i prestatges per a botelles il·luminats. Perfecta per oferir begudes als teus convidats.</p>
+          </div>
+          <div class="reveal reveal-delay-2" style="padding:28px; border:1px solid var(--border-gold); background:rgba(201,151,62,0.04);">
+            <div style="font-size:2rem; margin-bottom:14px;">🚻</div>
+            <div style="font-family:'Playfair Display',serif; font-size:1.2rem; font-weight:700; color:var(--dark-red); margin-bottom:8px;">Lavabos</div>
+            <p style="font-size:0.95rem; line-height:1.6; color:var(--text-mid); font-weight:300;">Lavabos complets i nets, inclou bany adaptat per a persones amb mobilitat reduïda. Espais còmodes i ben mantinguts.</p>
+          </div>
       </div>
     </div>
   </section>
@@ -188,7 +212,7 @@
             <li>Mini motos electriques</li>
           </ul>
         </div>
-                <div class="service-card">
+        <div class="service-card">
           <span class="service-icon">🎭</span>
           <div class="service-name">Animació i espectacles</div>
           <p class="service-desc">Contingut artístic i dinàmic pensat per entretenir, sorprendre i mantenir l’atenció del públic durant tot l’esdeveniment. Adaptable a diferents edats i formats.</p>
@@ -199,7 +223,7 @@
             <li>Conta contes</li>
           </ul>
         </div>
-                <div class="service-card">
+        <div class="service-card">
           <span class="service-icon">🎪</span>
           <div class="service-name">Organització d'esdeveniments i extres</div>
           <p class="service-desc">Serveis professionals que completen l’experiència de l’esdeveniment, des de la planificació fins a l’ambientació i el so. Tot el necessari per aconseguir un resultat cuidat i de qualitat.</p>
@@ -209,6 +233,13 @@
             <li>Decoracions amb globus</li>
             <li>Orquestres</li>
           </ul>
+        </div>
+        <div class="service-card service-card--cta">
+          <div class="service-cta-inner">
+            <span class="service-cta-ornament">✦</span>
+            <p class="service-cta-text">Descobreix tota la nostra oferta d'activitats i entreteniment</p>
+            <a href="activitats.html" class="service-cta-btn">Veure tots els serveis</a>
+          </div>
         </div>
       </div>
     </div>
