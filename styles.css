@@ -544,6 +544,148 @@ section {
   color: var(--dark-brown);
 }
 
+.service-card--boda {
+  grid-column: 1 / -1;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  border-top: 3px solid var(--gold) !important;
+  background: rgba(201, 151, 62, 0.05);
+}
+
+.boda-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+}
+
+.boda-image {
+  min-height: 280px;
+  overflow: hidden;
+}
+
+.boda-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  object-fit: cover;
+  display: block;
+}
+
+.boda-text {
+  padding: 40px 48px;
+  text-align: left;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.boda-label {
+  color: var(--gold);
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.boda-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: var(--cream);
+  margin-bottom: 14px;
+}
+
+.boda-subtitle {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: rgba(245, 237, 216, 0.7);
+  font-weight: 300;
+}
+
+.boda-toggle-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 4px 0 24px;
+}
+
+.boda-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 10px 26px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.boda-toggle:hover {
+  background: var(--gold);
+  color: var(--dark-brown);
+}
+
+.boda-toggle-icon {
+  transition: transform 0.3s;
+}
+
+.boda-toggle[aria-expanded="true"] .boda-toggle-icon {
+  transform: rotate(180deg);
+}
+
+.boda-info {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.45s ease;
+}
+
+.boda-info.open {
+  max-height: 600px;
+}
+
+.boda-info-inner {
+  padding: 0 48px 40px;
+  color: rgba(245, 237, 216, 0.75);
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.boda-info-inner ul {
+  margin-top: 12px;
+  list-style: none;
+}
+
+.boda-info-inner li {
+  padding: 4px 0 4px 16px;
+  position: relative;
+}
+
+.boda-info-inner li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+}
+
+@media (max-width: 768px) {
+  .boda-content {
+    grid-template-columns: 1fr;
+  }
+  .boda-image {
+    min-height: 220px;
+  }
+  .boda-text {
+    text-align: center;
+    padding: 32px 24px 16px;
+  }
+}
+
 /* ─── PRECIOS ─── */
 #precios {
   background: var(--cream);

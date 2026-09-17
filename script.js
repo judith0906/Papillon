@@ -175,3 +175,13 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'ArrowLeft') lightboxPrev();
   if (e.key === 'Escape') closeLightbox();
 });
+
+// ─── TOGGLE INFO BODES ───
+const bodaToggleBtn = document.getElementById('bodaToggleBtn');
+const bodaInfo = document.getElementById('bodaInfo');
+if (bodaToggleBtn && bodaInfo) {
+  bodaToggleBtn.addEventListener('click', () => {
+    const isOpen = bodaInfo.classList.toggle('open');
+    bodaToggleBtn.setAttribute('aria-expanded', isOpen);
+  });
+}
