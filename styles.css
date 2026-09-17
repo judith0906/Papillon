@@ -1212,6 +1212,11 @@ footer {
   .footer-right {
     text-align: center;
   }
+
+  .footer-legal {
+    padding-top: 15px;
+    font-size: 0.55rem;
+  }
 }
 
 /* ─── ACTIVITATS ─── */
@@ -1532,4 +1537,23 @@ footer {
 
 @media (max-width: 768px) {
   .dyn-gallery-slide { min-width: 100%; }
+}
+
+/* ─── LEGAL ─── */
+.footer-legal {
+    flex-basis: 100%;
+    width: 100%;
+    text-align: center;
+    padding-top: 18px;
+    margin-top: 5px;
+    border-top: 1px solid rgba(201, 151, 62, 0.15);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.58rem;
+    line-height: 1.6;
+    letter-spacing: 0.08em;
+    color: rgba(245, 237, 216, 0.45);
+}
+
+.footer-legal p {
+    margin: 2px 0;
 }
