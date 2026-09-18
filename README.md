@@ -5,7 +5,7 @@ Permite a los clientes conocer las instalaciones, consultar servicios y precios,
 ## 📌 Características
 - Galería dinámica de imágenes de las zonas interior, exterior y barra con navegación por flechas
 - Lightbox interactivo para visualizar las fotos en grande
-- Tabla de precios orientativos por franja horaria y espacio
+- Tabla de precios orientativos por franja horaria y espacio, con packs de 12 horas, IVA incluido y descuento para empadronados en Castellvell
 - Catálogo completo de servicios y actividades disponibles (Col·lectiu Pertots)
 - Formulario de reserva conectado via EmailJS sin necesidad de backend
 - Animaciones de scroll reveal con Intersection Observer
@@ -25,7 +25,7 @@ Permite a los clientes conocer las instalaciones, consultar servicios y precios,
 - **`assets/images/`** — Fotos de las zonas interior, exterior, barra y logotipos
 
 ## 🚧 Estado del proyecto
-En desarrollo
+Completado
 
 ## ⚠️ Uso del código
 Este proyecto está protegido bajo licencia propietaria.
