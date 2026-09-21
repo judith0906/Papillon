@@ -646,7 +646,7 @@ section {
 }
 
 .boda-info.open {
-  max-height: 600px;
+  max-height: 3000px;
 }
 
 .boda-info-inner {
@@ -654,6 +654,26 @@ section {
   color: rgba(245, 237, 216, 0.75);
   font-size: 0.95rem;
   line-height: 1.8;
+}
+
+.boda-info-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--cream);
+  margin-bottom: 16px;
+}
+
+.boda-info-highlight {
+  color: var(--gold-light);
+  font-weight: 500;
+}
+
+.boda-info-signature {
+  margin-top: 20px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--gold);
 }
 
 .boda-info-inner ul {
